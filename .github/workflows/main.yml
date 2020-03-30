@@ -1,4 +1,8 @@
-on: [pull_request_review]
+on:
+  pull_request:
+    types: [opened]
+  issue_comment:
+    types: [created]
 
 jobs:
   hello_world_job:
